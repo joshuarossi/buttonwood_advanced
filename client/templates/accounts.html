@@ -1,0 +1,121 @@
+<template name='account'>
+    <form class="form-horizontal">
+        <fieldset>
+
+            <!-- Form Name -->
+            <legend>Account</legend>
+
+
+            <!-- Text input-->
+            <div class="control-group">
+                <label class="control-label" for="UserName">UserName</label>
+                <div class="controls">
+                    <input id="UserName" name="UserName" type="text" placeholder="" class="input-xlarge" required="">
+                    <p class="help-block">Give yourself a unique name</p>
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="control-group">
+                <label class="control-label" for="email">Email Address</label>
+                <div class="controls">
+                    <input id="email" name="email" type="text" placeholder="" class="input-xlarge" required="">
+
+                </div>
+            </div>
+
+            <!-- Password input-->
+            <div class="control-group">
+                <label class="control-label" for="passwordinput">Password Input</label>
+                <div class="controls">
+                    <input id="passwordinput" name="passwordinput" type="password" placeholder="" class="input-xlarge">
+
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="control-group">
+                <label class="control-label" for="twitter">Twitter</label>
+                <div class="controls">
+                    <input id="twitter" name="twitter" type="text" placeholder="" class="input-xlarge">
+
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="control-group">
+                <label class="control-label" for="btc_address">Bitcoin Address</label>
+                <div class="controls">
+                    <input id="btc_address" name="btc_address" type="text" placeholder="" class="input-xlarge">
+
+                </div>
+            </div>
+
+            <!-- Button (Double) -->
+            <div class="control-group">
+                <label class="control-label" for="save"></label>
+                <div class="controls">
+                    <button id="save" name="save" class="btn btn-success">Save</button>
+                    <button id="cancel" name="cancel" class="btn btn-danger">Cancel</button>
+                </div>
+            </div>
+
+        </fieldset>
+    </form>
+    <form class="form-horizontal">
+        <fieldset>
+
+            <!-- Form Name -->
+            <legend>Order Preferences</legend>
+
+            <!-- Multiple Radios -->
+            <div class="control-group">
+                <label class="control-label" for="radios">Visibility</label>
+                <div class="controls">
+                    <label class="radio" for="radios-0">
+                        <input type="radio" name="radios" id="radios-0" value="Show" checked="checked">
+                        Show
+                    </label>
+                    <label class="radio" for="radios-1">
+                        <input type="radio" name="radios" id="radios-1" value="Hidden">
+                        Hidden
+                    </label>
+                </div>
+            </div>
+
+            <!-- Select Basic -->
+            <div class="control-group">
+                <label class="control-label" for="ttl">Time In Force</label>
+                <div class="controls">
+                    <select id="ttl" name="ttl" class="input-xlarge">
+                        <option>Day</option>
+                        <option>Good Till Cancel</option>
+                        <option>Fill or Kill</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Select Basic -->
+            <div class="control-group">
+                <label class="control-label" for="clearance">Clearance</label>
+                <div class="controls">
+                    <select id="clearance" name="clearance" class="input-xlarge">
+                        <option>Cash</option>
+                        <option>Venmo</option>
+                        <option>Chase QuickPay</option>
+                        <option>PayPal</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Button (Double) -->
+            <div class="control-group">
+                <label class="control-label" for="save"></label>
+                <div class="controls">
+                    <button id="save" name="save" class="btn btn-success">Save</button>
+                    <button id="cancel" name="cancel" class="btn btn-danger">Cancel</button>
+                </div>
+            </div>
+
+        </fieldset>
+    </form>
+</template>

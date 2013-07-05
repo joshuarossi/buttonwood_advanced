@@ -1,0 +1,78 @@
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Questrial">
+</head>
+
+<body>
+
+<div class = 'navbar navbar-inverse'>
+    <div class = 'navbar-inner nav-collapse' style = 'height: auto'>
+        <ul class = 'nav nav-pills'>
+            <li class="active"><a href="#home" data-toggle="tab">Home</a> </li>
+            <li><a href="#about" data-toggle="tab">About</a> </li>
+            <li><a href="#markets" data-toggle="tab">Markets</a> </li>
+            <li><a href="#orders" data-toggle="tab">Orders</a> </li>
+            <li><a href="#map" data-toggle="tab">Map</a> </li>
+            <li><a href="#chat" data-toggle="tab">Chat</a> </li>
+            <li><a href="#faq" data-toggle="tab">FAQ</a> </li>
+            <li><a href="#blog" data-toggle="tab">Blog</a> </li>
+            <li><a href="#contact" data-toggle="tab">Contact</a> </li>
+            <li><a href="#account" data-toggle="tab">Account</a> </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle"
+                   data-toggle="dropdown" href="#">Location<b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#NYC">New York City</a></li>
+                    <li><a href="#LA">Los Angeles</a></li>
+                    <li><a href="#SF">San Francisco</a></li>
+                    <li><a href="#Austin">Austin</a></li>
+                    <li><a href="#MIA">Miami</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+    <header>Satoshi Square</header>
+    <div class="tab-content" id="content" class="row-fluid">
+        <div id="home" class="tab-pane active">
+            {{> home}}
+        </div>
+        <div id="about" class="tab-pane">
+            {{> about}}
+        </div>
+        <div id="orders" class="tab-pane">
+           {{> orderbook}}
+        </div>
+        <div id="map" class="tab-pane">
+            {{> map}}
+        </div>
+        <div id="chat" class="tab-pane">
+            {{> chat}}
+        </div>
+        <div id="faq" class="tab-pane">
+            {{> faq}}
+        </div>
+        <div id="blog" class="tab-pane">
+            {{> blog}}
+        </div>
+        <div id="contact" class="tab-pane">
+            {{> contact}}
+        </div>
+        <div id="account" class="tab-pane">
+            {{> account}}
+        </div>
+        <div id="markets" class="tab-pane">
+            {{> markets}}
+        </div>
+    </div>
+</div>
+
+</body>
+
+
+
+
+
+
+
